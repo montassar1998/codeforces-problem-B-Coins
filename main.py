@@ -1,0 +1,73 @@
+a=str(input())
+b=str(input())
+c=str(input())
+res=[0,0,0]
+if(a[1]=="<"):
+    if(a[2]=="A"):
+        res[0]+=1
+    elif(a[2]=='B'):
+        res[1]+=1
+    else:
+        res[2]+=1
+else:
+    if(a[0]=="A"):
+        res[0]+=1
+    elif(a[0]=='B'):
+        res[1]+=1
+    else:
+        res[2]+=1
+ 
+if(b[1]=="<"):
+    if(b[2]=="A"):
+        res[0]+=1
+    elif(b[2]=='B'):
+        res[1]+=1
+    else:
+        res[2]+=1
+else:
+    if(b[0]=="A"):
+        res[0]+=1
+    elif(b[0]=='B'):
+        res[1]+=1
+    else:
+        res[2]+=1
+if(c[1]=="<"):
+    if(c[2]=="A"):
+        res[0]+=1
+    elif(c[2]=='B'):
+        res[1]+=1
+    else:
+        res[2]+=1
+else:
+    if(c[0]=="A"):
+        res[0]+=1
+    elif(c[0]=='B'):
+        res[1]+=1
+    else:
+        res[2]+=1
+#print(res)
+if(res[0]==res[1] and res[2]==res[1]):
+    print("Impossible")
+    exit(0)
+else:
+    if(res[0]==0):
+        print("A",end="")
+    elif(res[1]==0):
+      print("B",end="")
+    elif(res[2]==0):
+      print("C",end="")
+ 
+    if(res[0]==1):
+        print("A",end="")
+    elif(res[1]==1):
+      print("B",end="")
+    elif(res[2]==1):
+      print("C",end="")
+      
+    if(res[0]==2):
+        print("A",end="")
+    elif(res[1]==2):
+      print("B",end="")
+    elif(res[2]==2):
+      print("C",end="")
+ 
